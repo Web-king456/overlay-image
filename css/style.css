@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.showcase{
+    
+}
+.img{
+    position: relative;
+    
+}
+.img:hover{
+    transform: rotate(360deg);
+}
+.img img{
+    width: 100%;
+    
+    
+}
+.img::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(79deg, rgba(34,193,195,1) 0%, rgba(2,86,138,0) 0%, rgba(5,39,148,0.711922268907563) 64%, rgba(5,39,148,0.711922268907563) 100%);
+    width: 0%;
+    height:100%;
+    right: 0;
+    transition: .6s;
+}
+.img:hover::before{
+    width: 100%;
+    right: 0%;
+    
+}
+.img-icon {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+.img-icon ul li {
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+.img:hover .img-icon{
+    opacity: 1;
+    
+}
+.img-1::before{
+    width: 100%;
+    height: 0;
+    left: 0;
+}
+.img-1:hover::before{
+    height: 100%;
+    top: 0;
+}
+.img-2::before{
+    width: 100%;
+    height: 0;
+background: linear-gradient(301deg, rgba(15,242,26,0.7287289915966386) 38%, rgba(15,241,28,0) 100%, rgba(31,201,168,1) 100%, rgba(34,193,195,1) 100%, rgba(75,245,0,1) 100%, rgba(139,13,2,1) 100%, rgba(142,14,3,1) 100%, rgba(142,14,3,1) 100%, rgba(145,14,3,1) 100%, rgba(150,14,4,1) 100%, rgba(235,22,22,1) 100%, rgba(255,64,0,0.711922268907563) 100%, rgba(5,39,148,0.711922268907563) 100%);
+
+    left: 0;
+    bottom: 0;
+}
+.img-2:hover::before{
+    height: 100%;
+    bottom: 0;
+}
+.img-3::before{
+    width: 0%;
+    height: 100%;
+background: linear-gradient(301deg, rgba(15,242,26,0.7287289915966386) 38%, rgba(15,241,28,0) 100%, rgba(31,201,168,1) 100%, rgba(34,193,195,1) 100%, rgba(75,245,0,1) 100%, rgba(139,13,2,1) 100%, rgba(142,14,3,1) 100%, rgba(142,14,3,1) 100%, rgba(145,14,3,1) 100%, rgba(150,14,4,1) 100%, rgba(235,22,22,1) 100%, rgba(255,64,0,0.711922268907563) 100%, rgba(5,39,148,0.711922268907563) 100%);
+
+    left: 0;
+    bottom: 0;
+}
+.img-3:hover::before{
+    width: 100%;
+    right: 0;
+}
+.img{
+  margin-top:30px;   
+}
